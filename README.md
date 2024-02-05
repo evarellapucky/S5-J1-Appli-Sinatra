@@ -1,4 +1,5 @@
 The Gossip Project
+
 Bienvenue dans The Gossip Project, une application web développée avec Sinatra.
 
 Description
