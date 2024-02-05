@@ -25,7 +25,7 @@ class Gossip
 
   def self.find(id)
     all_gossips = self.all
-    all_gossips[id.to_i]
+    all_gossips[id.to_i - 1]
   end
 
   def self.update(id, new_content)
