@@ -1,0 +1,22 @@
+# <html>
+#   <head>
+#     <title>Editer un potin</title>
+#   </head>
+#   <body>
+#     <h1>Edite un potin !</h1>
+#     <p>Choisis le potin que tu veux modifier et fais une nouvelle proposition avec le super formulaire ci-dessous</p>
+  
+#     <% gossips.each.with_index do |gossip, index| %>
+#       <p>
+#       <a href="/gossips/<%= index + 1 %>/"> <%= index + 1 %> <%= gossip.author %><br/>
+#       <%= gossip.content %> </a>
+#       </p>
+#     <% end %>
+
+#     <form action='/gossips/edit' method='POST'>
+#       Quel potin veux-tu modifier ? :  <input type='text' name='gossip_id'/><br/>
+#       Balance ton potin : <input type='text' name='gossip_content'/><br/>
+#       <input type='submit'/>
+#     </form>
+#   </body>
+# </html>
